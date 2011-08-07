@@ -38,7 +38,7 @@ URL of the cPanel site (e.g. http://domain.com:2082)
 Path to the backup location. If the directory does not exists it will be
 created.
 
-### BACKUP_BASENAME ### ###
+### BACKUP_BASENAME ###
 
 prefix for your backup files (e.g. domainname).
 

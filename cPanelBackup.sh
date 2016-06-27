@@ -101,7 +101,7 @@ cd "$DOWNLOAD_DIR"
 # parse cPanel backup page and fetch all partial backups
 #
 echo "Parsing $URL..."
-for i in $(curl -v -s -u "$CPANEL_USER":"$CPANEL_PASSWD" "$URL" | $SEDCMD | grep gz)
+for i in $(curl -s -u "$CPANEL_USER":"$CPANEL_PASSWD" "$URL" | $SEDCMD | grep gz)
 do
   echo "download: $i"
   curl -s -u "$CPANEL_USER":"$CPANEL_PASSWD" -O "$CPANEL_HOST""$i"
